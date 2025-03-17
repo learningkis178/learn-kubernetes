@@ -3,8 +3,8 @@ kind: ReplicaSet
 metadata:
   name: frontend
   labels:
-    app: guestbook
-    tier: frontend
+    app: kishore
+    tier: test
 spec:
   # modify replicas according to your case
   replicas: 3
