@@ -1,3 +1,6 @@
+# Install Helm first
+# sudo labauto helm
+
 ---
 apiVersion: v1
 kind: Pod
@@ -86,3 +89,5 @@ spec:
             name: nginx-base
             port:
               number: 80
+
+
