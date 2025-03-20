@@ -17,6 +17,6 @@ spec:
     - name: test
       valueFrom:
           configMapKeyRef:
-            name: cm-demo-1           # The ConfigMap this value comes from.
+            name: myapp           # The ConfigMap this value comes from.
             key: name # The key to fetch.  
 
