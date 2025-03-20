@@ -13,9 +13,9 @@ spec:
   containers:
   - name: debug
     image: rkalluru/debug  
-  env:
-    - name: test
-      valueFrom:
+    env:
+      - name: test
+        valueFrom:
           configMapKeyRef:
             name: myapp           # The ConfigMap this value comes from.
             key: name # The key to fetch.  
