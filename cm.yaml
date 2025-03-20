@@ -1,0 +1,22 @@
+apiversion: v1
+kind: ConfigMap
+metadata:
+  name: myapp
+data:
+  name: ksihore
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cm-demo-1
+spec:
+  containers:
+  - name: debug
+    image: rkalluru/debug  
+  env:
+    - name: test
+      valueFrom:
+          configMapKeyRef:
+            name: cm-demo-1           # The ConfigMap this value comes from.
+            key: name # The key to fetch.  
+
