@@ -14,7 +14,7 @@ spec:
   - name: debug
     image: rkalluru/debug
     env:
-      - name: URL
+      - name: nam
         valueFrom:
           configMapKeyRef:
             name: myapp           # The ConfigMap this value comes from.
