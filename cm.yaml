@@ -4,3 +4,19 @@ metadata:
   name: myapp
 data:
   nam: kishore
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cm-demo-1
+spec:
+  containers:
+  - name: debug
+    image: rkalluru/debug
+    env:
+      - name: URL
+        valueFrom:
+          configMapKeyRef:
+            name: myapp           # The ConfigMap this value comes from.
+            key: nam # The key to fetch.
+
