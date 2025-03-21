@@ -61,7 +61,7 @@ kind: Ingress
 metadata:
   name: httpd-base
   annotations: 
-    nginx.ingress.kubernetes.io/force-ssl-redirect: true  
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"  
 spec:
   ingressClassName: nginx
   rules:
