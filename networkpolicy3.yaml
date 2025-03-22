@@ -15,9 +15,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-14-np
+  name: nginx-15-np
   labels:
-    podName: nginx-14-np
+    podName: nginx-15-np
     appName: nginx14
 spec:
   containers:
