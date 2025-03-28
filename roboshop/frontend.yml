@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nginx
+        image: public.ecr.aws/w8x4g9h7/roboshop-v3/frontend
         ports:
         - containerPort: 80
 ---
