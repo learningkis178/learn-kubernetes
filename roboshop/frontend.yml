@@ -19,9 +19,6 @@ spec:
         image: public.ecr.aws/w8x4g9h7/roboshop-v3/frontend
         ports:
         - containerPort: 80
-        envFrom:
-          - secretRef:
-              name: frontend
 ---
 apiVersion: v1
 kind: Service
